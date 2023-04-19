@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/cardview"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/background2"
+        android:id="@+id/relative"
+        >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/viewavatar"
+            android:src="@drawable/ic_baseline_insert_photo_24"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id="@+id/layoutrelative"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_toEndOf="@+id/viewavatar">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/flowmenu"
+                android:text="Title"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageButton
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flowmenu"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:id="@+id/txt_description"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/txt_name"
+            android:textColor="@color/black"
+            />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutrelative"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/txt_date"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:gravity="bottom"
+            android:text="Location"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutrelative"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="bottom"
+            android:text="Date"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

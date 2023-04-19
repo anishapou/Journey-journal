@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JourneyJournal</string>
+    <string name="login">Login</string>
+
+
+    <string name="navigation_open">Open Navigation Drawer</string>
+    <string name="navigation_close">Close Navigation Drawer</string>
+
+
+</resources>

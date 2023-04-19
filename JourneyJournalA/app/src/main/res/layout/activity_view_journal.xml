@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewJournal"
+    android:background="@drawable/background">
+
+
+
+    <TextView
+        android:id="@+id/showtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TITLE"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:id="@+id/showdescription"
+        android:layout_below="@+id/showtitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/showdate"
+        android:layout_below="@+id/showdescription"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+
+        />
+
+    <ImageView
+        android:id="@+id/showphoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/add_photo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</RelativeLayout>
